@@ -1,0 +1,39 @@
+{
+  "name": "stacks-side-bridge-tests",
+  "version": "1.0.0",
+  "description": "Run unit tests on this project.",
+  "type": "module",
+  "imports": {
+    "#*.json": {
+      "default": "./*.json"
+    }
+  },
+  "private": true,
+  "scripts": {
+    "test": "vitest run",
+    "test:report": "vitest run -- --coverage --costs",
+    "test:watch": "chokidar \"tests/**/*.ts\" \"contracts/**/*.clar\" -c \"npm run test:report\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hirosystems/clarinet-sdk": "^2.14.0",
+    "@project-serum/anchor": "^0.26.0",
+    "@solana/web3.js": "^1.98.0",
+    "@stacks/network": "^7.0.2",
+    "@stacks/transactions": "^6.12.0",
+    "bn": "^1.0.5",
+    "bs58": "^6.0.0",
+    "chokidar-cli": "^3.0.0",
+    "cross-fetch": "^4.1.0",
+    "dotenv": "^16.4.7",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^3.3.2",
+    "path": "^0.12.7",
+    "typescript": "^5.6.0",
+    "url": "^0.11.4",
+    "vite": "^6.1.0",
+    "vitest": "^3.0.0",
+    "vitest-environment-clarinet": "^2.3.0"
+  }
+}

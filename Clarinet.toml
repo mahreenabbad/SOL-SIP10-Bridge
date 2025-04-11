@@ -1,0 +1,19 @@
+[project]
+name = 'stacks-side-bridge'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+
+[contracts.bridge005]
+path = 'contracts/bridge005.clar'
+clarity_version = 1
+epoch = 2.05
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
