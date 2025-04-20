@@ -1,12 +1,11 @@
 (use-trait ft-trait .trait-sip-010-ft-standard.sip-010-trait)
 
-
 (define-constant ERR-TRANSFER (err u201))
 (define-constant INSUFFICIENT-BALANCE (err u203))
 
 ;; Counter to generate unique lock-ids
 (define-data-var lock-id-counter uint u0)
-
+;;mapping
 (define-map locks 
   {sender: principal, token: principal}  
   uint                                   
