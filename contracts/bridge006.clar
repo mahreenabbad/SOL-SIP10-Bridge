@@ -11,6 +11,8 @@
   uint                                   
 )
 
+;total locks
+
 (define-map total-locks
   { lock-id: uint }  ;; Unique identifier for each lock event
   { sender: principal, token: principal, amount: uint }  ;; Data for the bridge
