@@ -1,5 +1,5 @@
 (use-trait ft-trait .trait-sip-010-ft-standard.sip-010-trait)
-
+;;constant errors
 
 (define-constant ERR-TRANSFER (err u201))
 (define-constant  ERR_MISMATCHED_TOKENS (err u202))
