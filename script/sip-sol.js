@@ -114,7 +114,7 @@ const sip10Decimals = 1000000
         contractName: STACKS_BRIDGE_NAME,
         functionName: 'lock',
         functionArgs: [Cl.uint(sip10Amount),tokenTrait],
-        senderKey: "3a020135ad063d66f11c1b6e1e1d2b2a46cf99e721dde23c70463dca132eaaec01",
+        senderKey: "stacks side key",
         validateWithAbi: true,
         network: stacksNetwork,
          postConditionMode: PostConditionMode.Allow,
