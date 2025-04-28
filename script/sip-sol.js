@@ -42,7 +42,7 @@ const CLUSTER_URL = 'https://api.devnet.solana.com';
 const PROGRAM_ID = new PublicKey('BrqvbtST215rkLD1fyzj7p5j7tcVGoQPZ4T39GtkGttg');
 
 // Your user keypair (who is calling unlock)
-const base58SecretKey = '';
+const base58SecretKey = 'sol private key';
 const userKeypair = Keypair.fromSecretKey(bs58.decode(base58SecretKey));
 
 const wallet = new Wallet(userKeypair);
